@@ -1,5 +1,5 @@
 {
-  "name": "iStockChecker",
+  "name": "iStockCheck",
   "version": "1.0.0",
   "description": "Apple device stock check",
   "main": "server.js",
@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/mtrung/iStockChecker"
+    "url": "https://github.com/mtrung/iStockCheck"
   },
   "keywords": [
     "apple",
@@ -22,9 +22,9 @@
   "author": "Trung Vo",
   "license": "UNLICENSED",
   "bugs": {
-    "url": "https://github.com/mtrung/iStockChecker/issues"
+    "url": "https://github.com/mtrung/iStockCheck/issues"
   },
-  "homepage": "https://github.com/mtrung/iStockChecker#readme",
+  "homepage": "https://github.com/mtrung/iStockCheck#readme",
   "dependencies": {
     "node-cache": "^4.1.0",
     "request": "^2.74.0",
