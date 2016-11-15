@@ -1,0 +1,24 @@
+<div>
+<section>
+  <span class="mdl-card__title-text">{{resultArray.length}} items</span>
+</section>
+<section id="jira">  
+	<table class="mdl-data-table mdl-js-data-table mdl-shadow--2dp">
+		<thead>
+			<tr>
+				{{#each headers}}
+				<th class="mdl-data-table__cell--non-numeric">{{this}}</th>
+				{{/each}}				
+			</tr>
+		</thead>
+		<tbody>
+			{{#each resultArray}}
+			<tr class="main_row">
+				<td class="mdl-data-table__cell--non-numeric">{{storeNumber}}</td>
+				<td class="mdl-data-table__cell--non-numeric">{{storeName}}</td>
+			</tr>
+			{{/each}}
+		</tbody>
+	</table>
+</section>
+</div>

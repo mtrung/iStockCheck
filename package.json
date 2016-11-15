@@ -1,0 +1,40 @@
+{
+  "name": "iStockChecker",
+  "version": "1.0.0",
+  "description": "Apple device stock check",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "startd": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mtrung/iStockChecker"
+  },
+  "keywords": [
+    "apple",
+    "iphone",
+    "stock",
+    "instore",
+    "in-store"
+  ],
+  "author": "Trung Vo",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/mtrung/iStockChecker/issues"
+  },
+  "homepage": "https://github.com/mtrung/iStockChecker#readme",
+  "dependencies": {
+    "node-cache": "^4.1.0",
+    "request": "^2.74.0",
+    "request-promise": "^4.1.1",
+    "body-parser": "~1.13.2",
+    "express": "^4.13.4",
+    "express-handlebars": "^3.0.0",
+    "cookie-session": "^2.0.0-alpha.1"
+  },
+  "devDependencies": {
+    "nodemon": "^1.9.1"
+  }
+}
