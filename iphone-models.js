@@ -1,6 +1,65 @@
 'use strict';
 
-const iPhoneModels = [
+const iPhoneCarrierMap = {
+  'MN522LL/A': 'AT&T',
+  'MN532LL/A': 'AT&T',
+  'MN552LL/A': 'AT&T',
+  'MN562LL/A': 'AT&T',
+  'MN572LL/A': 'AT&T',
+  'MN592LL/A': 'AT&T',
+  'MN5C2LL/A': 'AT&T',
+  'MN5D2LL/A': 'AT&T',
+  'MN5E2LL/A': 'AT&T',
+  'MN5F2LL/A': 'AT&T',
+  'MN5G2LL/A': 'T-Mobile',
+  'MN5H2LL/A': 'T-Mobile',
+  'MN5J2LL/A': 'T-Mobile',
+  'MN5K2LL/A': 'T-Mobile',
+  'MN5L2LL/A': 'T-Mobile',
+  'MN5M2LL/A': 'T-Mobile',
+  'MN5N2LL/A': 'T-Mobile',
+  'MN5P2LL/A': 'T-Mobile',
+  'MN5Q2LL/A': 'T-Mobile',
+  'MN5R2LL/A': 'T-Mobile',
+  'MN5T2LL/A': 'Verizon',
+  'MN5U2LL/A': 'Verizon',
+  'MN5V2LL/A': 'Verizon',
+  'MN5W2LL/A': 'Verizon',
+  'MN5X2LL/A': 'Verizon',
+  'MN5Y2LL/A': 'Verizon',
+  'MN602LL/A': 'Verizon',
+  'MN612LL/A': 'Verizon',
+  'MN622LL/A': 'Verizon',
+  'MN632LL/A': 'Verizon',
+  'MN642LL/A': 'Sprint',
+  'MN652LL/A': 'Sprint',
+  'MN662LL/A': 'Sprint',
+  'MN672LL/A': 'Sprint',
+  'MN682LL/A': 'Sprint',
+  'MN692LL/A': 'Sprint',
+  'MN6A2LL/A': 'Sprint',
+  'MN6C2LL/A': 'Sprint',
+  'MN6D2LL/A': 'Sprint',
+  'MN6E2LL/A': 'Sprint',
+  'MNQR2LL/A': 'AT&T',
+  'MNQT2LL/A': 'AT&T',
+  'MNQU2LL/A': 'AT&T',
+  'MNQV2LL/A': 'AT&T',
+  'MNQW2LL/A': 'T-Mobile',
+  'MNQX2LL/A': 'T-Mobile',
+  'MNQY2LL/A': 'T-Mobile',
+  'MNR02LL/A': 'T-Mobile',
+  'MNR12LL/A': 'Verizon',
+  'MNR22LL/A': 'Verizon',
+  'MNR32LL/A': 'Verizon',
+  'MNR42LL/A': 'Verizon',
+  'MNR52LL/A': 'Sprint',
+  'MNR62LL/A': 'Sprint',
+  'MNR72LL/A': 'Sprint',
+  'MNR82LL/A': 'Sprint'
+};
+
+/*const iPhoneModels = [
 {p:"AT&T",c:"Black",g:128,m:"52"},
 {p:"AT&T",c:"Silver",g:128,m:"53"},
 {p:"AT&T",c:"Gold",g:128,m:"55"},
@@ -147,11 +206,15 @@ var models = {
     "MNCD2LL/A" : "US iPhone 7 256GB Jet Black (Sprint)",
 };
 
+// var Carrier = {};
 iPhoneModels.forEach(function(element) {
     let modelStr = 'MN' + element.m + '2LL/A';
     models[modelStr] = element;
-    // console.log(modelStr + ": " + models[modelStr]);
+    // console.log(modelStr + ": " + element.p);
+    // Carrier[modelStr] = element.p;
 }, this);
+
+// console.log(Carrier);
 
 // for (let modelStr in models) {
 //     console.log(modelStr + ": " + models[modelStr]);
@@ -171,9 +234,10 @@ function getModel(modelCode) {
         return;
     }
     return element;
-}
+}*/
     
 module.exports = {
-    models: models,
-    getModel : getModel
+    // models: models,
+    // getModel: getModel,
+    iPhoneCarrierMap: iPhoneCarrierMap
 }

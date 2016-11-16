@@ -1,7 +1,7 @@
 'use strict';
 
 var requestPromise = require('request-promise');
-var models = require("./iphone-models.js");
+// var models = require("./iphone-models.js");
 var NodeCache = require("node-cache");
 var notify = require("./notify.js");
 var config = require("./config.js");
@@ -200,7 +200,7 @@ function validateWantedModels(modelsWanted) {
     reportError("You have not set up any wanted models in the modelsWanted property. Polling has NOT started! ");
     return false;
   }
-
+/*
   //no models config
   if (models.models.length == 0) {
     reportError("There are no models in the models config, this is a configuration error. Polling has NOT started! ");
@@ -223,7 +223,7 @@ function validateWantedModels(modelsWanted) {
     reportError(message);
     return false
   }
-
+*/
   return true;
 }
 

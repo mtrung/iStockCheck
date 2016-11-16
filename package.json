@@ -32,7 +32,8 @@
     "body-parser": "~1.13.2",
     "express": "^4.13.4",
     "express-handlebars": "^3.0.0",
-    "cookie-session": "^2.0.0-alpha.1"
+    "cookie-session": "^2.0.0-alpha.1",
+    "ios-device-list": "^1.1.17"
   },
   "devDependencies": {
     "nodemon": "^1.9.1"
