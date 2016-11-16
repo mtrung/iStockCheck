@@ -70,31 +70,4 @@ router.get('/applestores', function (req, res, next) {
   });
 });
 
-// function routeHandler(req, res, next) {
-//   var requestType = req.params.requestType;
-//   if (!requestType || requestType.length === 0) requestType = 'all';
-
-//   if (requestType === 'SAM' || requestType === 'RMM') {
-//     req.session.projectName = requestType;
-//     res.render('error', {
-//       projectName: requestType,
-//       message: req.session.projectName + " project selected"
-//     });
-//     return;
-//   }
-
-//   var projectName = req.session.projectName || 'SAM';
-//   jira.searchByType(requestType, projectName, resultArray => {
-//     if (resultArray) {
-//       res.render('index', {
-//         projectName: projectName,
-//         jiraIssues: resultArray,
-//         filterType: req.params.requestType
-//       });
-//     } else {
-//       next(new Error("No issue found"));
-//     }
-//   });
-// }
-
 module.exports = router;
